@@ -111,7 +111,7 @@ void delay(int milliseconds)//delay function off of the internet
 void loopdat(){
  intake();
  while(1==1){// CTRL-C for now
-  delay(1000);//debateable, less delay time allows to catch processes that enter and exit quickly
+  delay(1000);//debateable, less delay time allows to catch processes that enter and exit quickly but puts more work on the system
   showNotInList(filter);
  }
  close();
