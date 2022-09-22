@@ -40,13 +40,13 @@ void addlinetofile(char* file, char* line){
  strcat(newtext,line);
  strcat(newtext,"\n");
  f=fopen(file,"w+");
- fprintf(f,newtext);
+ fprintf(f,"%s",newtext);
  fclose(f);
  free(newtext);
  
 }
 void writetofile(char* file, char* text){
  FILE *f=fopen(file,"w+");
- fprintf(f,text);
+ fprintf(f,"%s",text);
  fclose(f);
 }
